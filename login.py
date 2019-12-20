@@ -8,15 +8,20 @@ import RSAJS
 
 class Longin():
 
-    def __init__(self, user, password, login_url, login_KeyUrl,lesson_url):
+    def __init__(self, user, password):
         # 初始化程序数据
         self.Username = user
+        self.gnmkdm = 'N253512'
         self.Password = password
         def nowTime(): return str(round(time.time()*1000))
         self.now_time = nowTime()
-        self.lesson_url = lesson_url
-        self.login_url = login_url
-        self.login_Key = login_KeyUrl
+        self.login_url = "http://10.11.247.52/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="
+        self.login_Key = "http://10.11.247.52/jwglxt/xtgl/login_getPublicKey.html?time="
+        self.lesson_url = "http://10.11.247.52/jwglxt/xsxk/zzxkyzb_cxZzxkYzbIndex.html?gnmkdm=%s&layout=default&su=%s" % (
+            self.gnmkdm, self.Username)
+
+        self.chooseLesson_url = "http://10.11.247.52/jwglxt/xsxk/zzxkyzb_xkBcZyZzxkYzb.html?gnmkdm=%s&su=%s" % (
+            self.gnmkdm, self.Username)
 
     def Get_indexHtml(self):
         # 获取教务系统网站
@@ -71,13 +76,15 @@ class Longin():
             print("用户名或密码不正确，登录失败")
             exit()
 
-        def get_lesson():
+    def get_lesson(self):
+        # lesson_data = self.session.get(self.lesson_url).content.decode("utf-8")
+        test_data = self.session.get(self.lesson_url)
+        print(test_data.content.decode("utf-8"))
 
-
-        def logout(self):
-            logoutdata = self.session.get(
-                "http://10.11.247.52/jwglxt/logout?t=1576806088941&login_type=")
-            print(logoutdata)
+    def logout(self):
+        logoutdata = self.session.get(
+            "http://10.11.247.52/jwglxt/logout?t=1576806088941&login_type=")
+        print(logoutdata)
 
 
 class TimeTable():
@@ -92,18 +99,12 @@ class TimeTable():
 
 if __name__ == "__main__":
     # 登录主页url
-    login_url = "http://10.11.247.52/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="
-    # 请求PublicKey的URL
-    login_KeyUrl = "http://10.11.247.52/jwglxt/xtgl/login_getPublicKey.html?time="
+
     # 登录后的课表URL
     table_url = "http://10.11.247.52/jwglxt/kbcx/xskbcx_cxXsKb.html?gnmkdm=N2151"
 
-    lesson_url = "http://10.11.247.52/jwglxt/xsxk/zzxkyzb_cxZzxkYzbPartDisplay.html?gnmkdm=N253512&su="
-
-    zspt = Longin("2018334450245", "leonardo990727", login_url, login_KeyUrl,lesson_url)
+    zspt = Longin("2018334450245", "leonardo990727")
     response_cookies = zspt.Longin_Home()
-    table = TimeTable(response_cookies, table_url)
+    # table = TimeTable(response_cookies, table_url)
+    zspt.get_lesson()
     zspt.logout()
-
-
-
