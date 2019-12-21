@@ -97,7 +97,7 @@ def xunke(name, kklxdm):
             'xkkz_id': xkkz_id,
         }
         choose_data['kcmc'] = "("+kch+")"+kcmc+" - "+xf+"学分"
-        req_xun = session.post(xuanke_url, choose_data)
+        req_xun = session.post(xuanke_url, choose_data) 
         if 'flag' in req_xun.text:
             return req_xun.json()
         return 0

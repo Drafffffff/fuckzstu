@@ -10,6 +10,8 @@ class Longin():
 
     def __init__(self, user, password):
         # 初始化程序数据
+        self.counter = 1
+        self.pyCounter =1
         self.Username = user
         self.gnmkdm = 'N253512'
         self.Password = password
@@ -17,11 +19,57 @@ class Longin():
         self.now_time = nowTime()
         self.login_url = "http://10.11.247.52/jwglxt/xtgl/login_slogin.html?language=zh_CN&_t="
         self.login_Key = "http://10.11.247.52/jwglxt/xtgl/login_getPublicKey.html?time="
-        self.lesson_url = "http://10.11.247.52/jwglxt/xsxk/zzxkyzb_cxZzxkYzbIndex.html?gnmkdm=%s&layout=default&su=%s" % (
+        self.lesson_url = " http://10.11.247.52/jwglxt/xsxk/zzxkyzb_cxZzxkYzbPartDisplay.html?gnmkdm=%s&su=%s" % (
             self.gnmkdm, self.Username)
 
         self.chooseLesson_url = "http://10.11.247.52/jwglxt/xsxk/zzxkyzb_xkBcZyZzxkYzb.html?gnmkdm=%s&su=%s" % (
             self.gnmkdm, self.Username)
+
+        self.lesson_check = {
+            '漆艺': 32,
+            '设计名作赏析': 100,
+            '速写': 35,
+            '雕塑': 35,
+            '经典广告欣赏(双语)': 90
+
+        }
+
+        self.lessonData = {
+            'rwlx': 2,
+            'xkly': 0,
+            'bklx_id': 0,
+            'xqh_id': 1,
+            'jg_id': 'N',
+            'zyh_id': 3395,
+            'zyfx_id': 'wfx',
+            'njdm_id': 2018,
+            'bh_id': 'N183952',
+            'xbm': 1,
+            'xslbdm': '06',
+            'ccdm': 3,
+            'xsbj': 4294967296,
+            'sfkknj': 0,
+            'sfkkzy': 0,
+            'sfznkx': 0,
+            'zdkxms': 0,
+            'sfkxq': 0,
+            'sfkcfx': 0,
+            'kkbk': 0,
+            'kkbkdj': 0,
+            'sfkgbcx': 0,
+            'sfrxtgkcxd': 0,
+            'tykczgxdcs': 0,
+            'xkxnm': 2019,
+            'xkxqm': 12,
+            'kklxdm': 12,
+            'rlkz': 0,
+            'kspage': 1,
+            'jspage': 10
+        }
+
+    lesson_detail_info = {
+
+    }
 
     def Get_indexHtml(self):
         # 获取教务系统网站
@@ -77,9 +125,33 @@ class Longin():
             exit()
 
     def get_lesson(self):
-        # lesson_data = self.session.get(self.lesson_url).content.decode("utf-8")
-        test_data = self.session.get(self.lesson_url)
-        print(test_data.content.decode("utf-8"))
+        lessonInfo = self.session.post(self.lesson_url, data=self.lessonData)
+        with open('log.txt', 'a', encoding='utf-8') as file:
+            file.write('==============' +
+                    time.asctime(time.localtime(time.time()))+'=============='+'\n')
+            file.write('                   第'+str(self.counter)+'次检查\n')
+            file.write('====================================================\n')
+            for item in lessonInfo.json()['tmpList']:
+                lessonName = item['kcmc']
+                lessonPeopleNum = int(item['yxzrs'])
+                lessonEnable = False
+                if(lessonPeopleNum < self.lesson_check[lessonName]):
+                    lessonEnable = True
+                    self.pyCounter += 1
+                    self.lesson_detail_info['kch_id'] = item['kch_id']
+                    self.lesson_detail_info['jxb_id'] = item['jxb_id']
+                    self.lesson_detail_info['kch'] = item['kch']
+                    self.lesson_detail_info['kcmc'] = item['kcmc']
+                    self.lesson_detail_info['xxkbj'] = item['xxkbj']
+                    self.lesson_detail_info['xf'] = item['xf']
+                    self.lesson_detail_info['kcmc'] = "("+self.lesson_detail_info['kch']+")" + \
+                        self.lesson_detail_info['kcmc'] + \
+                        " - "+self.lesson_detail_info['xf']+"学分"
+                file.write('课程名称：'+lessonName+'   已选人数：' +
+                           item['yxzrs']+'   是否可选：'+str(lessonEnable)+'\n')
+            file.write('\n\n\n')
+        self.counter+=1
+        return lessonEnable
 
     def logout(self):
         logoutdata = self.session.get(
@@ -106,5 +178,11 @@ if __name__ == "__main__":
     zspt = Longin("2018334450245", "leonardo990727")
     response_cookies = zspt.Longin_Home()
     # table = TimeTable(response_cookies, table_url)
-    zspt.get_lesson()
+    while(1):
+        print(str(time.asctime(time.localtime(time.time())))+'     第%d次检查！！'%zspt.counter)
+
+        if(zspt.get_lesson()):
+            print('抓住PY交易！'+str(zspt.pyCounter))
+        time.sleep(0.2)
+
     zspt.logout()
