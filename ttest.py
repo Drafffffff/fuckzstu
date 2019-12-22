@@ -1,24 +1,39 @@
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954CD2A5A22B1565E0530100007F003E', 'jxbmc': '(2019-2020-2)-32631-1', 'jxbzls': '1', 'kch': '32631', 'kch_id': '32631', 'kcmc': '漆
- 艺', 'kcrow': '1', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '32'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FA229C735D4C2E0530100007FA339', 'jxbmc': '(2019-2020-2)-32631-2', 'jxbzls': '1', 'kch': '32631', 'kch_id': '32631', 'kcmc': '漆
- 艺', 'kcrow': '1', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '32'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FA229C738D4C2E0530100007FA339', 'jxbmc': '(2019-2020-2)-32631-3', 'jxbzls': '1', 'kch': '32631', 'kch_id': '32631', 'kcmc': '漆
- 艺', 'kcrow': '1', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '32'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954CD2A5A2301565E0530100007F003E', 'jxbmc': '(2019-2020-2)-43508-1', 'jxbzls': '1', 'kch': '43508', 'kch_id': '43508', 'kcmc': '设
- 计名作赏析', 'kcrow': '2', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '100'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FAB8E23895B07E0530100007F57FA', 'jxbmc': '(2019-2020-2)-43607-1', 'jxbzls': '1', 'kch': '43607', 'kch_id': '43607', 'kcmc': '速
- 写', 'kcrow': '3', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '35'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FAB8E238C5B07E0530100007F57FA', 'jxbmc': '(2019-2020-2)-43607-2', 'jxbzls': '1', 'kch': '43607', 'kch_id': '43607', 'kcmc': '速
- 写', 'kcrow': '3', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '35'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FAFC50779D6B4E0530100007F671E', 'jxbmc': '(2019-2020-2)-43608-1', 'jxbzls': '1', 'kch': '43608', 'kch_id': '43608', 'kcmc': '雕
- 塑', 'kcrow': '4', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '35'}
-{'cxbj': '0', 'date': '二○一九年十二月二十一日', 'dateDigit': '2019年12月21日', 'day': '21', 'fxbj': '0', 'jgpxzd': '1', 'jxb_id':
- '954FAFC5077CD6B4E0530100007F671E', 'jxbmc': '(2019-2020-2)-43659-1', 'jxbzls': '1', 'kch': '43659', 'kch_id': '43659', 'kcmc': '经
- 典广告欣赏(双语)', 'kcrow': '5', 'kklxdm': '12', 'listnav': 'false', 'localeKey': 'zh_CN', 'month': '12', 'pageable': True, 'queryModel': {'currentPage': 1, 'currentResult': 0, 'entityOrField': False, 'limit': 15, 'offset': 0, 'pageNo': 0, 'pageSize': 15, 'showCount': 10, 'sorts': [], 'totalCount': 0, 'totalPage': 0, 'totalResult': 0}, 'rangeable': True, 'totalResult': '0', 'userModel': {'monitor': False, 'roleCount': 0, 'roleKeys': '', 'roleValues': '', 'status': 0, 'usable': False}, 'xf': '2.0', 'xxkbj': '0', 'year': '2019', 'yxzrs': '90'}
+import smtplib
+from email.mime.text import MIMEText
+# 设置服务器所需信息
+# 163邮箱服务器地址
+mail_host = 'smtp.qq.com'
+# 163用户名
+mail_user = '2537429956'
+# 密码(部分邮箱为授权码)
+mail_pass = 'yxyfuvjozdbhebdc'
+# 邮件发送方邮箱地址
+sender = '2537429956@qq.com'
+# 邮件接受方邮箱地址，注意需要[]包裹，这意味着你可以写多个邮件地址群发
+receivers = ['13777879014@163.com']
+
+# 设置email信息
+# 邮件内容设置
+message = MIMEText('content', 'plain', 'utf-8')
+# 邮件主题
+message['Subject'] = 'ヽ(✿ﾟ▽ﾟ)ノ  郑显理的课来啦~~~~'
+# 发送方信息
+message['From'] = sender
+# 接受方信息
+message['To'] = receivers[0]
+
+# 登录并发送邮件
+try:
+    smtpObj = smtplib.SMTP()
+    # 连接到服务器
+    smtpObj.connect(mail_host, 25)
+    # 登录到服务器
+    smtpObj.login(mail_user, mail_pass)
+    # 发送
+    smtpObj.sendmail(
+        sender, receivers, message.as_string())
+    # 退出
+    smtpObj.quit()
+    print('success')
+except smtplib.SMTPException as e:
+    print('error', e)  # 打印错误
